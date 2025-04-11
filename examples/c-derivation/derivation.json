@@ -1,0 +1,69 @@
+{
+  "/nix/store/cjwfv80rk0c4hi8an1mybs40qhgx9978-hello.drv": {
+    "args": [
+      "-e",
+      "/nix/store/v6x3cs394jgqfbi0a42pam708flxaphh-default-builder.sh"
+    ],
+    "builder": "/nix/store/qzwsj5ihx6kjwikr0g77dnhcfxm1by68-bash-5.2p37/bin/bash",
+    "env": {
+      "__darwinAllowLocalNetworking": "",
+      "__impureHostDeps": "/bin/sh /usr/lib/libSystem.B.dylib /usr/lib/system/libunc.dylib /dev/zero /dev/random /dev/urandom /bin/sh",
+      "__propagatedImpureHostDeps": "",
+      "__propagatedSandboxProfile": "",
+      "__sandboxProfile": "",
+      "__structuredAttrs": "",
+      "buildCommand": "mkdir -p $out/bin/ && /nix/store/m39dpcv8k3h9rf1l55j6mqxwlfk82s06-gcc-wrapper-13.3.0/bin/gcc $src -o $out/bin/hello",
+      "buildInputs": "",
+      "builder": "/nix/store/qzwsj5ihx6kjwikr0g77dnhcfxm1by68-bash-5.2p37/bin/bash",
+      "cmakeFlags": "",
+      "configureFlags": "",
+      "depsBuildBuild": "",
+      "depsBuildBuildPropagated": "",
+      "depsBuildTarget": "",
+      "depsBuildTargetPropagated": "",
+      "depsHostHost": "",
+      "depsHostHostPropagated": "",
+      "depsTargetTarget": "",
+      "depsTargetTargetPropagated": "",
+      "doCheck": "",
+      "doInstallCheck": "",
+      "mesonFlags": "",
+      "name": "hello",
+      "nativeBuildInputs": "",
+      "out": "/nix/store/lz81knxqw36rwny1pkhsd5bxdgjx7f6r-hello",
+      "outputs": "out",
+      "patches": "",
+      "propagatedBuildInputs": "",
+      "propagatedNativeBuildInputs": "",
+      "src": "/nix/store/dbsl9nbfj7fj1vdf1g2jhjmmnxaq9yji-hello.c",
+      "stdenv": "/nix/store/nxybyv1j7awpcb29v7dy25f88r716y23-stdenv-darwin",
+      "strictDeps": "",
+      "system": "aarch64-darwin"
+    },
+    "inputDrvs": {
+      "/nix/store/ahi556yk61jfdxfkb46c09dr6f28iq9y-gcc-wrapper-13.3.0.drv": {
+        "dynamicOutputs": {},
+        "outputs": ["out"]
+      },
+      "/nix/store/rfd5p10r2lvjcznjck6k078mnv9pqpm3-bash-5.2p37.drv": {
+        "dynamicOutputs": {},
+        "outputs": ["out"]
+      },
+      "/nix/store/rqyl3bwmg4z623slha4i8qxyaa2qg5da-stdenv-darwin.drv": {
+        "dynamicOutputs": {},
+        "outputs": ["out"]
+      }
+    },
+    "inputSrcs": [
+      "/nix/store/dbsl9nbfj7fj1vdf1g2jhjmmnxaq9yji-hello.c",
+      "/nix/store/v6x3cs394jgqfbi0a42pam708flxaphh-default-builder.sh"
+    ],
+    "name": "hello",
+    "outputs": {
+      "out": {
+        "path": "/nix/store/lz81knxqw36rwny1pkhsd5bxdgjx7f6r-hello"
+      }
+    },
+    "system": "aarch64-darwin"
+  }
+}
